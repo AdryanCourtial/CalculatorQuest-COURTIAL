@@ -6,10 +6,10 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="CalculatorQuest.MainWindow"
         Title="CalculatorQuest">
-        <StackPanel Orientation="Vertical" Background="Aqua" Margin="20">
-                <StackPanel Orientation="Vertical" Background="Brown" Margin="1" Width="">
-                        <Label x:Name="Operation" Content="" FontSize="16" Height="75" Background="Chartreuse"/>
-                        <Label x:Name="Result" Content="" FontSize="16" Height="75" Background="Violet"/>
+        <StackPanel Orientation="Vertical" Background="White" Margin="20">
+                <StackPanel Orientation="Vertical" Background="Black" Margin="1" Width="">
+                        <Label x:Name="Operation" Content="" FontSize="16" Height="75" Background="LightBlue"/>
+                        <Label x:Name="Result" Content="" FontSize="16" Height="75" Background="LightBlue"/>
                 </StackPanel>
                 <Grid>
                         <Grid.ColumnDefinitions>
@@ -25,28 +25,32 @@
                                 <RowDefinition Height="*" />
                                 <RowDefinition Height="*" />
                                 <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
-                        <Button Grid.Column="0" Grid.Row="0"  Margin="5" Content="C" Background="Gray" Click="WhenButtonPressed" x:Name="Del"></Button>
-                        <Button Grid.Column="1" Grid.Row="0"  Margin="5" Content="CE" Background="Gray" Click="WhenButtonPressed" x:Name="ClearEntry"></Button>
-                        <Button Grid.Column="2" Grid.Row="0"  Margin="5" Content="←" Background="Gray" Click="WhenButtonPressed" x:Name="ClearAll"></Button>
-                        <Button Grid.Column="0" Grid.Row="1"  Margin="5" Content="%" Background="Gray" Click="WhenButtonPressed" x:Name="Mod"></Button>
-                        <Button Grid.Column="1" Grid.Row="1"  Margin="5" Content="/" Background="Gray" Click="WhenButtonPressed" x:Name="Divide"></Button>
-                        <Button Grid.Column="2" Grid.Row="1"  Margin="5" Content="x" Background="Gray" Click="WhenButtonPressed" x:Name="Multiply"></Button>
-                        <Button Grid.Column="0" Grid.Row="2"  Margin="5" Content="+/-" Background="Gray" Click="WhenButtonPressed" x:Name="Sign"></Button>
-                        <Button Grid.Column="1" Grid.Row="2"  Margin="5" Content="+" Background="Gray" Click="WhenButtonPressed" x:Name="More"></Button>
-                        <Button Grid.Column="2" Grid.Row="2"  Margin="5" Content="-" Background="Gray" Click="WhenButtonPressed" x:Name="Less"></Button>
-                        <Button Grid.Column="0" Grid.Row="3"  Margin="5" Content="1" Background="Gray" Click="WhenButtonPressed" x:Name="One"></Button>
-                        <Button Grid.Column="1" Grid.Row="3"  Margin="5" Content="2" Background="Gray" Click="WhenButtonPressed" x:Name="Two"></Button>
-                        <Button Grid.Column="2" Grid.Row="3"  Margin="5" Content="3" Background="Gray" Click="WhenButtonPressed" x:Name="Three"></Button>
-                        <Button Grid.Column="0" Grid.Row="4"  Margin="5" Content="4" Background="Gray" Click="WhenButtonPressed" x:Name="Four"></Button>
-                        <Button Grid.Column="1" Grid.Row="4"  Margin="5" Content="5" Background="Gray" Click="WhenButtonPressed" x:Name="Five"></Button>
-                        <Button Grid.Column="2" Grid.Row="4"  Margin="5" Content="6" Background="Gray" Click="WhenButtonPressed" x:Name="Six"></Button>
-                        <Button Grid.Column="0" Grid.Row="5"  Margin="5" Content="7" Background="Gray" Click="WhenButtonPressed" x:Name="Seven"></Button>
-                        <Button Grid.Column="1" Grid.Row="5"  Margin="5" Content="8" Background="Gray" Click="WhenButtonPressed" x:Name="Eight"></Button>
-                        <Button Grid.Column="2" Grid.Row="5"  Margin="5" Content="9" Background="Gray" Click="WhenButtonPressed" x:Name="Nine"></Button>
-                        <Button Grid.Column="0" Grid.Row="6"  Margin="5" Content="." Background="Gray" Click="WhenButtonPressed" x:Name="Point"></Button>
-                        <Button Grid.Column="1" Grid.Row="6"  Margin="5" Content="0" Background="Gray" Click="WhenButtonPressed" x:Name="Zero"></Button>
-                        <Button Grid.Column="2" Grid.Row="6"  Margin="5" Content="=" Background="Gray" Click="WhenButtonPressed" x:Name="Equal"></Button>
+                        <Button Grid.Column="0" Grid.Row="0"  Margin="5" Width="60" Content="C" Background="Gray" Click="WhenButtonPressed" x:Name="Del"></Button>
+                        <Button Grid.Column="1" Grid.Row="0"  Margin="5" Width="60" Content="CE" Background="Gray" Click="WhenButtonPressed" x:Name="ClearEntry"></Button>
+                        <Button Grid.Column="2" Grid.Row="0"  Margin="5" Width="60" Content="←" Background="Gray" Click="WhenButtonPressed" x:Name="ClearAll"></Button>
+                        <Button Grid.Column="0" Grid.Row="1"  Margin="5" Width="60" Content="%" Background="Gray" Click="WhenButtonPressed" x:Name="Mod"></Button>
+                        <Button Grid.Column="1" Grid.Row="1"  Margin="5" Width="60" Content="/" Background="Gray" Click="WhenButtonPressed" x:Name="Divide"></Button>
+                        <Button Grid.Column="2" Grid.Row="1"  Margin="5" Width="60" Content="x" Background="Gray" Click="WhenButtonPressed" x:Name="Multiply"></Button>
+                        <Button Grid.Column="0" Grid.Row="2"  Margin="5" Width="60" Content="+/-" Background="Gray" Click="WhenButtonPressed" x:Name="Sign"></Button>
+                        <Button Grid.Column="1" Grid.Row="2"  Margin="5" Width="60" Content="+" Background="Gray" Click="WhenButtonPressed" x:Name="More"></Button>
+                        <Button Grid.Column="2" Grid.Row="2"  Margin="5" Width="60" Content="-" Background="Gray" Click="WhenButtonPressed" x:Name="Less"></Button>
+                        <Button Grid.Column="0" Grid.Row="3"  Margin="5" Width="60" Content="1" Background="Gray" Click="WhenButtonPressed" x:Name="One"></Button>
+                        <Button Grid.Column="1" Grid.Row="3"  Margin="5" Width="60" Content="2" Background="Gray" Click="WhenButtonPressed" x:Name="Two"></Button>
+                        <Button Grid.Column="2" Grid.Row="3"  Margin="5" Width="60" Content="3" Background="Gray" Click="WhenButtonPressed" x:Name="Three"></Button>
+                        <Button Grid.Column="0" Grid.Row="4"  Margin="5" Width="60" Content="4" Background="Gray" Click="WhenButtonPressed" x:Name="Four"></Button>
+                        <Button Grid.Column="1" Grid.Row="4"  Margin="5" Width="60" Content="5" Background="Gray" Click="WhenButtonPressed" x:Name="Five"></Button>
+                        <Button Grid.Column="2" Grid.Row="4"  Margin="5" Width="60" Content="6" Background="Gray" Click="WhenButtonPressed" x:Name="Six"></Button>
+                        <Button Grid.Column="0" Grid.Row="5"  Margin="5" Width="60" Content="7" Background="Gray" Click="WhenButtonPressed" x:Name="Seven"></Button>
+                        <Button Grid.Column="1" Grid.Row="5"  Margin="5" Width="60" Content="8" Background="Gray" Click="WhenButtonPressed" x:Name="Eight"></Button>
+                        <Button Grid.Column="2" Grid.Row="5"  Margin="5" Width="60" Content="9" Background="Gray" Click="WhenButtonPressed" x:Name="Nine"></Button>
+                        <Button Grid.Column="0" Grid.Row="6"  Margin="5" Width="60" Content="." Background="Gray" Click="WhenButtonPressed" x:Name="Point"></Button>
+                        <Button Grid.Column="1" Grid.Row="6"  Margin="5" Width="60" Content="0" Background="Gray" Click="WhenButtonPressed" x:Name="Zero"></Button>
+                        <Button Grid.Column="2" Grid.Row="6"  Margin="5" Width="60" Content="=" Background="Gray" Click="WhenButtonPressed" x:Name="Equal"></Button>
+                        <Button Grid.Column="0" Grid.Row="7"  Margin="5" Width="60" Content="sqrt" Background="Gray" Click="WhenButtonPressed" x:Name="sqrt"></Button>
+                        <Button Grid.Column="1" Grid.Row="7"  Margin="5" Width="60" Content="square" Background="Gray" Click="WhenButtonPressed" x:Name="square"></Button>
+                        <Button Grid.Column="2" Grid.Row="7"  Margin="5" Width="60" Content="negative" Background="Gray" Click="WhenButtonPressed" x:Name="negative"></Button>
                 </Grid>
         </StackPanel>
 

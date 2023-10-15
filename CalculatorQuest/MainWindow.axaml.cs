@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics;
 using System.Drawing.Printing;
 using Avalonia.Controls;
@@ -16,7 +17,7 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         this.Width = 300;
-        this.Height = 500;
+        this.Height = 525;
         InitializeComponent();
     }
 

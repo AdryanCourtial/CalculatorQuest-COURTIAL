@@ -18,6 +18,11 @@ public class Calc
 
     public static string Operator(string op)
     {
+        if(op == null)
+        {
+            return "RightSomething";
+        }
+        
         if (op == "")
         {
             Console.WriteLine("Please enter an operation");
