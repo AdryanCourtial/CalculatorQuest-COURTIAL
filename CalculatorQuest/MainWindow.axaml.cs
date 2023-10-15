@@ -22,6 +22,20 @@ public partial class MainWindow : Window
     }
 
 
+    private void WhensqrtIsPressed(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        Button button = (Button)sender;
+        string input = button.Content.ToString();
+
+        Result.Content = Calc.opSqrt(Result.Content.ToString());
+    }
+    private void WhenSisPressed(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        Button button = (Button)sender;
+        string input = button.Content.ToString();
+
+        Result.Content = Calc.opSquare(Result.Content.ToString());
+    }
     private void WhenButtonPressed(object sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
         Button button = (Button)sender;
@@ -59,7 +73,7 @@ public partial class MainWindow : Window
             Result.Content += input;
             nbrpoint++;
         }
-
+        
         if (Calc.VerifSign(input[0]) && nbrsign == 0 && count > 0)
         {
             Operation.Content = Result.Content + input;

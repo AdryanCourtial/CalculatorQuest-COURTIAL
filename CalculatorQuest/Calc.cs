@@ -13,9 +13,20 @@ public class Calc
     // {
     //     
     // }
-    int count = 0;
-    int nbrpoint = 0;
-
+    
+    public static string opSqrt(string op)
+    {
+        double result;
+        result = Math.Sqrt(int.Parse(op));
+        return Math.Round(result, 0).ToString();
+    }
+    public static string opSquare(string op)
+    {
+        int result;
+        result = int.Parse(op) * int.Parse(op);
+        return result.ToString();
+    }
+    
     public static string Operator(string op)
     {
         if(op == null)
@@ -94,6 +105,11 @@ public class Calc
             
             switch (sign)
             {
+                case "":
+                    result = arg1 + arg2;
+                    Console.WriteLine(result);
+                    return result.ToString();
+                
                 case "+":
                     result = arg1 + arg2;
                     Console.WriteLine(result);
